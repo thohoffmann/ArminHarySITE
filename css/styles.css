@@ -1,0 +1,108 @@
+body {
+    position: relative;
+}
+/* ### PORTRAIT GALLERY DESKTOP ### */
+.grid-container {
+    width: 900px;
+    height: 640px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #444;
+    cursor: pointer;
+}
+/* ### PORTRAIT GALLERY MOBILE ### */
+.grid-container-mobile {
+    width: 350px;
+    height: 670px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.item-mobile1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item-mobile2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item-mobile3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.item-mobile4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.card-link {
+    position: relative;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
